@@ -1,0 +1,435 @@
+@charset "UTF-8";
+/*Cargar la fuente de la Universidad Nacional de Colombia*/
+@font-face {
+  font-family: Ancizar Sans-regular;
+  src: url('../fonts/Ancizar Sans-Regular.otf');
+}
+
+/* Acontinuación se definen valores a los atributos de HTMl 
+ * p, a, h1, h2. Los cuales serán heredados a menos que 
+ * un nuevo valor sea especificado. 
+*/
+p {
+  font-family: Ancizar Sans-regular;
+  font-size: x-large;
+}
+
+a {
+  font-family: Ancizar Sans-regular;
+}
+
+h1 {
+  font-family: Ancizar Sans-regular;
+  color: #4CAF50;
+}
+h2 {
+  font-family: Ancizar Sans-regular;
+  color: #4CAF50;
+}
+
+/* Se "container" usando flex para que sea más fácil ubicar los elementos que contiene */
+.container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* 
+ * "banner-image"  se posiciona en relación con su posición normal
+ * usando el atributo "position" y el valor "relative"
+ * usar el valor "vw" para la altura y el ancho facilita que el elemento 
+ * mantenga un tamaño relativo al de la ventana del navegador
+*/
+.banner-image {
+    position: relative;
+    width: 90vw;
+    height: 24vw;
+    background-image: url(../img/banner.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Configuración de los valores para los elementos que pertenecen al banner*/
+.shield {
+  width: 100px;
+  height: 120px;
+  background-image: url(../img/escudo.png);
+  background-size: cover;
+}
+.banner-title h1{
+  color: white;
+  font-family: Ancizar Sans-regular;
+}
+
+.banner-title h2{
+    color: white;
+    font-family: Ancizar Sans-regular;
+  }
+
+.logos {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Configuración de los valores para los elementos que pertenecen a la barra de navegación*/
+.nav-bar ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #666;
+}
+
+.nav-bar li {
+  font-size: large;
+}
+
+.nav-bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Cambia el color del link cuando el puntero pasa sobre el elemento */
+.nav-bar li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+/*
+ * Configuración de los elementos que pertenecen al contenido específico de cada documento HTML
+*/
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  height: 400px;
+}
+
+.image1{
+  background-image: url(../img/description1.jpg);
+}
+
+.image2{
+  background-image: url(../img/description2.jpg);
+}
+
+.image3{
+  background-image: url(../img/description3.jpg);
+}
+
+.image-sanG{
+  background-image: url(../img/SanG.jpg);
+}
+
+.image-cabalgata{
+  background-image: url(../img/cabalgata.jpg);
+}
+
+.image-cafe{
+  background-image: url(../img/cafe.jpg);
+}
+
+.image-desfile-carrosas{
+  background-image: url(../img/desfile_carrosas.jpg);
+}
+
+.image-sang-2{
+  background-image: url(../img/sang2.jpg);
+}
+
+.image-iglesia_in {
+  background-image: url(../img/iglesia_in.jpg);
+}
+
+.image-description {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content-tourism {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  height: 400px;
+
+}
+
+.image-tourism {
+  width: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.image-lagunaNegra1 {
+  background-image: url(../img/lagunaNegra1.jpg);
+}
+
+.image-lagunaNegra2 {
+  background-image: url(../img/lagunaNegra2.jpg);
+}
+
+.image-lagunaNegra3 {
+  background-image: url(../img/lagunaNegra3.jpg);
+}
+
+.image-lagunaNegra4 {
+  background-image: url(../img/lagunaNegra4.jpg);
+}
+
+.image-lagunaEstrella1 {
+  background-image: url(../img/lagunaEstrella1.JPG);
+}
+
+.image-lagunaEstrella2 {
+  background-image: url(../img/lagunaEstrella2.jpg);
+}
+
+.image-museo1 {
+  background-image: url(../img/museo1.JPG);
+}
+
+.image-museo2{
+  background-image: url(../img/museo2.jpg);
+}
+.description{
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0;
+  height: 100%;
+  
+}
+
+.description p{ 
+  padding: 10% 5% 5% 5%; 
+}
+
+.description h1{ 
+  padding: 10% 5% 5% 5%; 
+}
+.description:hover {
+  opacity: 0.9;
+}
+
+/*
+ * Configuración de los elementos que pertenecen a una sección
+ * Esto es para el documento general.html
+*/
+.section {
+  padding: 5% 5% 5% 5%;
+  flex-direction: column;
+}
+
+.section p {
+  font-size: 40px;
+}
+
+.section-container {
+  width: 90vw;
+}
+
+.section-container h1 {
+  font-size: 40px;
+  color: green;
+  font-family: Ancizar Sans-regular;
+}
+
+hr {
+  border-top: 1px solid gray;
+}
+
+.section-content{
+  display: flex;
+  flex-direction: column;
+  padding: 5% 5% 0% 5%;
+  justify-content: center;
+}
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.links a {
+  font-size: 30px;
+  display: block;
+  text-decoration: none;
+}
+
+
+.links a:hover {
+  background-color: green;
+  color: #ffffff;
+}
+
+.section-title h2 {
+  font-size: 30px;
+  color: blue;
+}
+
+.section-title {
+  padding: 0% 0% 0% 45%;
+}
+
+
+.section-shield {
+  padding: 0% 0% 0% 40%;
+}
+
+.logo-description {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 300px;
+}
+
+.shield-description {
+  background-image: url(../img/escudo.png);
+}
+
+.section-flag {
+  padding: 0% 0% 0% 30%;
+}
+.flag-description {
+  background-image: url(../img/bandera.png);
+  width: 350px;
+  
+}
+
+.economy-description {
+    background-image: url(../img/economia.jpg);
+}
+
+.geography-description {
+  background-image: url(../img/geografia.jpg);
+}
+
+.ecology-description {
+  background-image: url(../img/ecologia.jpg);
+}
+
+/*
+ * Definición del comportamiento cuando el tamaño de la pantalla es menor que 800px 
+*/
+@media only screen and (max-width: 800px) {
+  .nav-bar li {
+    font-size: small
+  }
+
+  .description h1 {
+    font-size: 30px;
+  }
+  .section-title{
+    padding: 0% 0% 0% 40%;
+  }
+  .section-shield {
+    padding: 0% 0% 0% 30%;
+  }
+
+  .section-flag {
+    padding: 0% 0% 0% 10%;
+  }
+
+  .banner-image {
+    opacity: 0.7;
+  }
+
+  .section p {
+    font-size: 20px;
+  }
+
+  .section-content p {
+    font-size: 20px;
+  }
+
+  .section-title h1{
+    font-size: 30px;
+  }
+
+  .section-title h2{
+    font-size: 20px;
+  }
+
+  .section-content h1{
+    font-size: 20px;
+  }
+
+  .section-content p{
+    font-size: 20px;
+  }
+
+  .section-content a{
+    font-size: 20px;
+  }
+
+  .logos {
+    flex-direction: column; 
+  }
+
+  .banner-image {
+    position: relative;
+    width: 90vw;
+    height: 60vw;
+    background-repeat: repeat-x;
+    background-size:auto;
+  }
+
+  .banner-title h1{
+    color: black;
+  }
+  
+  .banner-title h2{
+    color: black;
+  }
+
+  .description p{ 
+    font-size: small;
+  }
+
+  .links a {
+    font-size: 20px;
+  }
+}
+
+/*
+ * Definición del comportamiento cuando el tamaño de la pantalla es menor que 500px 
+*/
+@media only screen and (max-width: 500px) {
+
+  .nav-bar li {
+    font-size: x-small
+  }
+  
+  .description h1 {
+    font-size: 20px;
+  }
+  .section-title{
+    padding: 0% 0% 0% 20%;
+  }
+  .section-shield {
+    padding: 0% 0% 0% 20%;
+  }
+
+  .section-flag {
+    padding: 0% 0% 0% 0%;
+  }
+  
+}
