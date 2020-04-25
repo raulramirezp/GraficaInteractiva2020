@@ -1,0 +1,71 @@
+
+
+.container {
+  background-color: black;
+}
+
+/* 
+  * The position attribute assign with the value relative 
+   is used to be able to put text over the banner image.
+  * vm relative length is used to do responsive container
+*/
+.banner-image {
+    position: relative;
+    width: 90vw;
+    height: 24vw;
+    background-image: url(../img/banner.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.shield {
+  width: 100px;
+  height: 120px;
+  background-image: url(../img/escudo.png);
+  background-size: cover;
+}
+.banner-title h1{
+  color: white;
+}
+
+.banner-title h2{
+    color: white;
+  }
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.logos {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .logos {
+    flex-direction: column; 
+  }
+
+  .banner-image {
+    position: relative;
+    width: 90vw;
+    height: 60vw;
+    background-repeat: repeat-x;
+    background-size:auto;
+  }
+
+  .banner-title h1{
+    color: black;
+  }
+  
+  .banner-title h2{
+      color: black;
+    }
+}
