@@ -14,6 +14,10 @@ a {
   font-family: Ancizar Sans-regular;
 }
 
+h2 {
+  font-family: Ancizar Sans-regular;
+  color: #4CAF50;
+}
 .container {
   display: flex;
   width: 100%;
@@ -156,7 +160,7 @@ a {
   font-size: 40px;
 }
 
-.section-container  {
+.section-container {
   width: 90vw;
 }
 
@@ -171,11 +175,11 @@ hr {
 }
 
 .section-content{
-  padding: 5% 5% 5% 5%;
+  display: flex;
+  flex-direction: column;
+  padding: 5% 5% 0% 5%;
   justify-content: center;
 }
-
-
 
 .links {
   display: flex;
@@ -192,6 +196,52 @@ hr {
 .links a:hover {
   background-color: green;
   color: #ffffff;
+}
+
+.section-title h2 {
+  font-size: 30px;
+  color: blue;
+}
+
+.section-title {
+  padding: 0% 0% 0% 45%;
+}
+
+
+.section-shield {
+  padding: 0% 0% 0% 40%;
+}
+
+.logo-description {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 300px;
+}
+
+.shield-description {
+  background-image: url(../img/escudo.png);
+}
+
+.section-flag {
+  padding: 0% 0% 0% 30%;
+}
+.flag-description {
+  background-image: url(../img/bandera.png);
+  width: 350px;
+  
+}
+
+.economy-description {
+    background-image: url(../img/economia.jpg);
+}
+
+.geography-description {
+  background-image: url(../img/geografia.jpg);
+}
+
+.ecology-description {
+  background-image: url(../img/ecologia.jpg);
 }
 /*
   * Change behaviour when the screen width is less than 800px 
