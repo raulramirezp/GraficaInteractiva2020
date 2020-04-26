@@ -101,52 +101,41 @@
   height: 400px;
 }
 
-.description1 {
+.image1{
   background-image: url(../img/description1.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  color: transparent;
-  padding: 5% 5% 5% 5%;
 }
 
-.description1:hover {
-  background-image: unset;
-  background-color: #111;
-  color: white;
-  font-family: Ancizar Sans-regular;
-  font-size: large;
-}
-
-.description2 {
+.image2{
   background-image: url(../img/description2.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
-  color: transparent;
-  padding: 5% 5% 5% 5%;
 }
 
-.description2:hover {
-  background-image: unset;
-  background-color: #111;
-  color: white;
-  font-family: Ancizar Sans-regular;
-  font-size: large;
-}
-
-.description3 {
+.image3{
   background-image: url(../img/description3.jpg);
-  background-size: contain;
-  background-repeat: no-repeat; 
-  color: transparent;
-  padding: 5% 5% 5% 5%;
 }
-.description3:hover {
-  background-image: unset;
-  background-color: #111;
-  color: white;
+
+.image-description{
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+
+.description{
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0;
+  height: 100%;
+  
+}
+
+.description p{ 
+  padding: 10% 5% 5% 5%; 
   font-family: Ancizar Sans-regular;
-  font-size: large;
- 
+  font-size: x-large;
+}
+
+.description:hover {
+  opacity: 0.9;
 }
 
 /*
@@ -171,5 +160,9 @@
   
   .banner-title h2{
       color: black;
+    }
+
+    .description p{ 
+      font-size: small;
     }
 }
