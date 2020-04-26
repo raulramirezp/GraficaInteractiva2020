@@ -1,7 +1,16 @@
+@charset "UTF-8";
 
+@font-face {
+  font-family: Ancizar Sans-regular;
+  src: url('../fonts/Ancizar Sans-Regular.otf');
+}
 
 .container {
-  background-color: black;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
 }
 
 /* 
@@ -26,17 +35,14 @@
 }
 .banner-title h1{
   color: white;
+  font-family: Ancizar Sans-regular;
 }
 
 .banner-title h2{
     color: white;
+    font-family: Ancizar Sans-regular;
   }
 
-.header {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
 .logos {
   display: flex;
   width: 100%;
@@ -48,6 +54,104 @@
   align-items: center;
 }
 
+/*
+  * nav bar style
+*/
+.nav-bar ul {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90vw;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #666;
+}
+
+.nav-bar li {
+  font-size: large;
+}
+
+.nav-bar li a {
+  font-family: Ancizar Sans-regular;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to black on hover */
+.nav-bar li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+/*
+ * content style 
+*/
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  height: 400px;
+}
+
+.description1 {
+  background-image: url(../img/description1.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+  padding: 5% 5% 5% 5%;
+}
+
+.description1:hover {
+  background-image: unset;
+  background-color: #111;
+  color: white;
+  font-family: Ancizar Sans-regular;
+  font-size: large;
+}
+
+.description2 {
+  background-image: url(../img/description2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  color: transparent;
+  padding: 5% 5% 5% 5%;
+}
+
+.description2:hover {
+  background-image: unset;
+  background-color: #111;
+  color: white;
+  font-family: Ancizar Sans-regular;
+  font-size: large;
+}
+
+.description3 {
+  background-image: url(../img/description3.jpg);
+  background-size: contain;
+  background-repeat: no-repeat; 
+  color: transparent;
+  padding: 5% 5% 5% 5%;
+}
+.description3:hover {
+  background-image: unset;
+  background-color: #111;
+  color: white;
+  font-family: Ancizar Sans-regular;
+  font-size: large;
+ 
+}
+
+/*
+  * Change behaviour when the screen width is less than 800px 
+*/
 @media (max-width: 800px) {
   .logos {
     flex-direction: column; 
