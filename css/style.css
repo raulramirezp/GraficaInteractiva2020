@@ -5,6 +5,15 @@
   src: url('../fonts/Ancizar Sans-Regular.otf');
 }
 
+p {
+  font-family: Ancizar Sans-regular;
+  font-size: x-large;
+}
+
+a {
+  font-family: Ancizar Sans-regular;
+}
+
 .container {
   display: flex;
   width: 100%;
@@ -74,7 +83,6 @@
 }
 
 .nav-bar li a {
-  font-family: Ancizar Sans-regular;
   display: block;
   color: white;
   text-align: center;
@@ -130,14 +138,61 @@
 
 .description p{ 
   padding: 10% 5% 5% 5%; 
-  font-family: Ancizar Sans-regular;
-  font-size: x-large;
 }
 
 .description:hover {
   opacity: 0.9;
 }
 
+/*
+ * Section
+*/
+.section {
+  padding: 5% 5% 5% 5%;
+  flex-direction: column;
+}
+
+.section p {
+  font-size: 40px;
+}
+
+.section-container  {
+  width: 90vw;
+}
+
+.section-container h1 {
+  font-size: 40px;
+  color: green;
+  font-family: Ancizar Sans-regular;
+}
+
+hr {
+  border-top: 1px solid gray;
+}
+
+.section-content{
+  padding: 5% 5% 5% 5%;
+  justify-content: center;
+}
+
+
+
+.links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.links a {
+  font-size: 30px;
+  display: block;
+  text-decoration: none;
+}
+
+
+.links a:hover {
+  background-color: green;
+  color: #ffffff;
+}
 /*
   * Change behaviour when the screen width is less than 800px 
 */
