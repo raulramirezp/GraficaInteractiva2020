@@ -1,10 +1,14 @@
 @charset "UTF-8";
-
+/*Cargar la fuente de la Universidad Nacional de Colombia*/
 @font-face {
   font-family: Ancizar Sans-regular;
   src: url('../fonts/Ancizar Sans-Regular.otf');
 }
 
+/* Acontinuación se definen valores a los atributos de HTMl 
+ * p, a, h1, h2. Los cuales serán heredados a menos que 
+ * un nuevo valor sea especificado. 
+*/
 p {
   font-family: Ancizar Sans-regular;
   font-size: x-large;
@@ -22,6 +26,8 @@ h2 {
   font-family: Ancizar Sans-regular;
   color: #4CAF50;
 }
+
+/* Se "container" usando flex para que sea más fácil ubicar los elementos que contiene */
 .container {
   display: flex;
   width: 100%;
@@ -31,9 +37,10 @@ h2 {
 }
 
 /* 
-  * The position attribute assign with the value relative 
-   is used to be able to put text over the banner image.
-  * vm relative length is used to do responsive container
+ * "banner-image"  se posiciona en relación con su posición normal
+ * usando el atributo "position" y el valor "relative"
+ * usar el valor "vw" para la altura y el ancho facilita que el elemento 
+ * mantenga un tamaño relativo al de la ventana del navegador
 */
 .banner-image {
     position: relative;
@@ -44,6 +51,7 @@ h2 {
     background-repeat: no-repeat;
 }
 
+/* Configuración de los valores para los elementos que pertenecen al banner*/
 .shield {
   width: 100px;
   height: 120px;
@@ -71,9 +79,7 @@ h2 {
   align-items: center;
 }
 
-/*
-  * nav bar style
-*/
+/* Configuración de los valores para los elementos que pertenecen a la barra de navegación*/
 .nav-bar ul {
   display: flex;
   justify-content: space-evenly;
@@ -98,7 +104,7 @@ h2 {
   text-decoration: none;
 }
 
-/* Change the link color to black on hover */
+/* Cambia el color del link cuando el puntero pasa sobre el elemento */
 .nav-bar li a:hover {
   background-color: #111;
 }
@@ -108,7 +114,7 @@ h2 {
 }
 
 /*
- * content style 
+ * Configuración de los elementos que pertenecen al contenido específico de cada documento HTML
 */
 .content {
   display: flex;
@@ -224,7 +230,8 @@ h2 {
 }
 
 /*
- * Section
+ * Configuración de los elementos que pertenecen a una sección
+ * Esto es para el documento general.html
 */
 .section {
   padding: 5% 5% 5% 5%;
@@ -318,8 +325,9 @@ hr {
 .ecology-description {
   background-image: url(../img/ecologia.jpg);
 }
+
 /*
-  * Cambia el comportamiento cuando el tamaño de la pantalla es menor que 800px 
+ * Definición del comportamiento cuando el tamaño de la pantalla es menor que 800px 
 */
 @media only screen and (max-width: 800px) {
   .nav-bar li {
@@ -402,7 +410,7 @@ hr {
 }
 
 /*
-  * Cambia el comportamiento cuando el tamaño de la pantalla es menor que 500px 
+ * Definición del comportamiento cuando el tamaño de la pantalla es menor que 500px 
 */
 @media only screen and (max-width: 500px) {
 
