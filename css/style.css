@@ -164,7 +164,7 @@ h2 {
   justify-content: space-between;
   width: 90vw;
   height: 400px;
-  background-color: rgb(178, 187, 175)
+
 }
 
 .image-tourism {
@@ -319,9 +319,59 @@ hr {
   background-image: url(../img/ecologia.jpg);
 }
 /*
-  * Change behaviour when the screen width is less than 800px 
+  * Cambia el comportamiento cuando el tamaño de la pantalla es menor que 800px 
 */
-@media (max-width: 800px) {
+@media only screen and (max-width: 800px) {
+  .nav-bar li {
+    font-size: small
+  }
+
+  .description h1 {
+    font-size: 30px;
+  }
+  .section-title{
+    padding: 0% 0% 0% 40%;
+  }
+  .section-shield {
+    padding: 0% 0% 0% 30%;
+  }
+
+  .section-flag {
+    padding: 0% 0% 0% 10%;
+  }
+
+  .banner-image {
+    opacity: 0.7;
+  }
+
+  .section p {
+    font-size: 20px;
+  }
+
+  .section-content p {
+    font-size: 20px;
+  }
+
+  .section-title h1{
+    font-size: 30px;
+  }
+
+  .section-title h2{
+    font-size: 20px;
+  }
+
+  .section-content h1{
+    font-size: 20px;
+  }
+
+  .section-content p{
+    font-size: 20px;
+  }
+
+  .section-content a{
+    font-size: 20px;
+  }
+
   .logos {
     flex-direction: column; 
   }
@@ -339,10 +389,39 @@ hr {
   }
   
   .banner-title h2{
-      color: black;
-    }
+    color: black;
+  }
 
-    .description p{ 
-      font-size: small;
-    }
+  .description p{ 
+    font-size: small;
+  }
+
+  .links a {
+    font-size: 20px;
+  }
+}
+
+/*
+  * Cambia el comportamiento cuando el tamaño de la pantalla es menor que 500px 
+*/
+@media only screen and (max-width: 500px) {
+
+  .nav-bar li {
+    font-size: x-small
+  }
+  
+  .description h1 {
+    font-size: 20px;
+  }
+  .section-title{
+    padding: 0% 0% 0% 20%;
+  }
+  .section-shield {
+    padding: 0% 0% 0% 20%;
+  }
+
+  .section-flag {
+    padding: 0% 0% 0% 0%;
+  }
+  
 }
