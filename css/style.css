@@ -14,6 +14,10 @@ a {
   font-family: Ancizar Sans-regular;
 }
 
+h1 {
+  font-family: Ancizar Sans-regular;
+  color: #4CAF50;
+}
 h2 {
   font-family: Ancizar Sans-regular;
   color: #4CAF50;
@@ -149,13 +153,57 @@ h2 {
   background-image: url(../img/iglesia_in.jpg);
 }
 
-.image-description{
+.image-description {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
+.content-tourism {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  height: 400px;
+  background-color: rgb(178, 187, 175)
+}
+
+.image-tourism {
+  width: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.image-lagunaNegra1 {
+  background-image: url(../img/lagunaNegra1.jpg);
+}
+
+.image-lagunaNegra2 {
+  background-image: url(../img/lagunaNegra2.jpg);
+}
+
+.image-lagunaNegra3 {
+  background-image: url(../img/lagunaNegra3.jpg);
+}
+
+.image-lagunaNegra4 {
+  background-image: url(../img/lagunaNegra4.jpg);
+}
+
+.image-lagunaEstrella1 {
+  background-image: url(../img/lagunaEstrella1.JPG);
+}
+
+.image-lagunaEstrella2 {
+  background-image: url(../img/lagunaEstrella2.jpg);
+}
+
+.image-museo1 {
+  background-image: url(../img/museo1.JPG);
+}
+
+.image-museo2{
+  background-image: url(../img/museo2.jpg);
+}
 .description{
   background-color: #ffffff;
   border: 1px solid black;
