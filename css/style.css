@@ -125,6 +125,30 @@ h2 {
   background-image: url(../img/description3.jpg);
 }
 
+.image-sanG{
+  background-image: url(../img/SanG.jpg);
+}
+
+.image-cabalgata{
+  background-image: url(../img/cabalgata.jpg);
+}
+
+.image-cafe{
+  background-image: url(../img/cafe.jpg);
+}
+
+.image-desfile-carrosas{
+  background-image: url(../img/desfile_carrosas.jpg);
+}
+
+.image-sang-2{
+  background-image: url(../img/sang2.jpg);
+}
+
+.image-iglesia_in {
+  background-image: url(../img/iglesia_in.jpg);
+}
+
 .image-description{
   width: 100%;
   background-size: cover;
@@ -144,6 +168,9 @@ h2 {
   padding: 10% 5% 5% 5%; 
 }
 
+.description h1{ 
+  padding: 10% 5% 5% 5%; 
+}
 .description:hover {
   opacity: 0.9;
 }
